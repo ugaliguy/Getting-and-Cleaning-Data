@@ -60,3 +60,30 @@ setwd("C:/Users/XXXXXXXX/Documents/UCI HAR Dataset")
 6. colnames(xTest) = features[,2]
 7. colnames(yTest) = "activityId"
 
+### Step1  Merge the trainig and testing data sets
+
+##### Create separate data sets for training and testing, then merge them.
+1. trainData = cbind(xTrain,yTrain,subjectTrain)
+2. testData = cbind(xTest,yTest,subjectTest)
+3. projectData = rbind(trainData,testData)
+
+### Steps 2 and 3  Extract only the measurements on the mean and standard deviation for each measurement. Use descriptive activity names to name the activities in the data set.
+
+1. meanStdFeatures<- grepl("(-mean\\(\\)|-std\\(\\))", features$V2)
+2. meanStdData <- projectData[,meanStdFeatures]
+3. meanStdNamedData <- merge(activity_labels, meanStdData, by = "activityId", all = TRUE)
+
+### Step 4  Appropriately label the data set with descriptive variable names and reorder the columns so that "subjectId" appears first
+1. names(meanStdNamedData)<-gsub("\\()","", names(meanStdNamedData))
+2. names(meanStdNamedData)<-gsub("std","StdDev", names(meanStdNamedData))
+3. names(meanStdNamedData)<-gsub("mean","Mean", names(meanStdNamedData))
+4. names(meanStdNamedData)<-gsub("^(t)","time", names(meanStdNamedData))
+5. names(meanStdNamedData)<-gsub("^(f)","freq", names(meanStdNamedData))
+6. names(meanStdNamedData)<-gsub("BodyBody","Body", names(meanStdNamedData))
+7. meanStdNamedData<-meanStdNamedData[c(69, 1:68)]
+ 
+### Step 5  From the data set in step 4 - meanStdNamedData - create a second, independent tidy data set with the average of each variable for each activity and each subject.
+
+1. tidyData <- aggregate(.~subjectId+activityName, meanStdNamedData, mean)
+2. tidyData <- tidyData[order(tidyData$subjectId, tidyData$activityId),]
+3. write.table(tidyData, file = "tidy_data.txt", row.name = FALSE)
