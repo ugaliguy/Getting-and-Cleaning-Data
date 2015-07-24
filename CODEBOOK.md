@@ -45,11 +45,47 @@ These signals were used to estimate variables of the feature vector for each pat
 * fBodyAccJerk-XYZ
 * fBodyGyro-XYZ
 * fBodyAccMag
-* fBodyAccJerkMag
-* fBodyGyroMag
-* fBodyGyroJerkMag
+* fBodyBodyAccJerkMag
+* fBodyBodyGyroMag
+* fBodyBodyGyroJerkMag
  
 The variables that were estimated from these signals are:
 * mean(): Mean Value
 * std(): Standard Deviation
  
+We transform the above variable names to more descriptive variable names under the following rules:
+* 't' becomes 'time'
+* 'f' becomes 'freq' (short for 'frequency')
+* 'std()' becomes'StdDev'
+* 'mean()' becomes 'MEAN'
+* 'BodyBody' becomes'Body'
+ 
+For example, the variable fBodyBodyGyroJerkMag-std() becomes freqBodyGyroJerkMag-StdDev.
+
+### Variable Descriptions
+
+| Variable | Description |
+|----------|-------------|
+|SubjectId| Subject ID |
+|activityName| Activty Name|
+|activityId| Activty ID|
+|timeBodyAcc-Mean-X| Mean time for acceleration of body for X direction |
+|timeBodyAcc-Mean-Y| Mean time for acceleration of body for Y direction |
+|timeBodyAcc-Mean-Z| Mean time for acceleration of body for Z direction |
+|timeBodyAcc-StdDev-X| Standard deviation of time for acceleration of body for X direction |
+|timeBodyAcc-StdDev-Y| Standard deviation of time for acceleration of body for Y direction |
+|timeBodyAcc-StdDev-Z| Standard deviation of time for acceleration of body for Z direction |
+|timeGravityAcc-Mean-X| Mean time of acceleration of gravity for X direction |
+|timeGravityAcc-Mean-Y| Mean time of acceleration of gravity for Y direction |
+|timeGravityAcc-Mean-Z| Mean time of acceleration of gravity for Z direction |
+|timeGravityAcc-StdDev-X| Standard deviation of time of acceleration of gravity for X direction |
+|timeGravityAcc-StdDev-Y| Standard deviation of time of acceleration of gravity for Y direction |
+|timeGravityAcc-StdDev-Z| Standard deviation of time of acceleration of gravity for Z direction |
+|timeBodyAccJerk-Mean-X| Mean time of body acceleration jerk for X direction |
+|timeBodyAccJerk-Mean-Y| Mean time of body acceleration jerk for Y direction |
+|timeBodyAccJerk-Mean-Z| Mean time of body acceleration jerk for Z direction |
+|timeBodyAccJerk-StdDev-X| Standard deviation of time of body acceleration jerk for X direction |
+|timeBodyAccJerk-StdDev-Y| Standard deviation of time of body acceleration jerk for Y direction |
+|timeBodyAccJerk-StdDev-Z| Standard deviation of time of body acceleration jerk for Z direction |
+|||
+
