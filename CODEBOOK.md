@@ -101,4 +101,32 @@ For example, the variable fBodyBodyGyroJerkMag-std() becomes freqBodyGyroJerkMag
 |timeBodyGyroJerk-StdDev-Z| Standard deviation of jerk signal of body for Z direction |
 |timeBodyAccMag-Mean|Mean magnitude of body Acceleration|
 |timeBodyAccMag-StdDev|Standard deviation of magnitude of body Acceleration|
+|timeGravityAccMag-Mean| Mean gravity acceleration magnitude |
+|timeGravityAccMag-StdDev| Standard deviation of gravity acceleration magnitude |
+|timeBodyAccJerkMag-Mean| Mean magnitude of body acceleration jerk |
+|timeBodyAccJerkMag-StdDev| Standard deviation of magnitude of body acceleration jerk |
+|timeBodyGyroMag-Mean| Mean magnitude of body gyroscope measurement |
+|timeBodyGyroMag-StdDev| Standard deviation of magnitude of body gyroscope measurement |
+|timeBodyGyroJerkMag-Mean| Mean magnitude of body gyroscope jerk measurement |
+|timeBodyGyroJerkMag-StdDev | Standard deviation of magnitude of body body gyroscope jerk measurement|
+|freqBodyAcc-Mean-X| Mean frequency of body acceleration for X direction |
+|freqBodyAcc-Mean-Y| Mean frequency of body acceleration for Y direction |
+|freqBodyAcc-Mean-Z| Mean frequency of body acceleration for Z direction |
+|freqBodyAcc-StdDev-X| Standard deviation of frequency of body acceleration for X direction |
+|freqBodyAcc-StdDev-Y| Standard deviation of frequency of body acceleration for Y direction |
+|freqBodyAcc-StdDev-Z| Standard deviation of frequency of body acceleration for Z direction |
+|freqBodyAccJerk-Mean-X| Mean frequency of body accerlation jerk for X direction |
+|freqBodyAccJerk-Mean-Y| Mean frequency of body accerlation jerk for Y direction |
+|freqBodyAccJerk-Mean-Z| Mean frequency of body accerlation jerk for Z direction |
+|freqBodyAccJerk-StdDev-X| Standard deviation frequency of body accerlation jerk for X direction |
+|freqBodyAccJerk-StdDev-Y| Standard deviation frequency of body accerlation jerk for Y direction |
+|freqBodyAccJerk-StdDev-Z| Standard deviation frequency of body accerlation jerk for Z direction |
+|freqBodyGyro-Mean-X|Mean frequency of body gyroscopic measurement for X direction|
+|freqBodyGyro-Mean-Y|Mean frequency of body gyroscopic measurement for Y direction|
+|freqBodyGyro-Mean-Z|Mean frequency of body gyroscopic measurement for Z direction|
+|freqBodyGyro-StdDev-X| Standard deviation frequency of body gyroscopic measurement for X direction |
+|freqBodyGyro-StdDev-Y| Standard deviation frequency of body gyroscopic measurement for Y direction |
+|freqBodyGyro-StdDev-Z| Standard deviation frequency of body gyroscopic measurement for Z direction |
+|freqBodyAccMag-Mean| Mean frequency of body acceleration magnitude |
+|freqBodyAccMag-StdDev| Standard deviation of frequency of body acceleration magnitude |
 |||
