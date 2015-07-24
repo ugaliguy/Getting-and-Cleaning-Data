@@ -37,20 +37,18 @@ library(dplyr)
 setwd("C:/Users/XXXXXXXX/Documents/UCI HAR Dataset")
 
 #### Read the data from the various files
-1. Names of column variables and labels for linking the training and testing files
 
-activity_labels <- read.table('./activity_labels.txt', header = FALSE) ..
-features <- read.table('./features.txt', header = FALSE) ..
+##### Names of column variables and labels for linking the training and testing files
+1. activity_labels <- read.table('./activity_labels.txt', header = FALSE) 
+2. features <- read.table('./features.txt', header = FALSE) 
 
-2. Read data from training files
+##### Read data from training files
+1. subjectTrain <- read.table('./train/subject_train.txt', header = FALSE)
+2. xTrain <- read.table('./train/X_train.txt', header = FALSE) 
+3. yTrain <- read.table('./train/y_train.txt', header = FALSE)
 
-subjectTrain <- read.table('./train/subject_train.txt', header = FALSE)
-xTrain <- read.table('./train/X_train.txt', header = FALSE) 
-yTrain <- read.table('./train/y_train.txt', header = FALSE)
-
-3. Read data from testing files
-
-subjectTest <- read.table('./test/subject_test.txt', header = FALSE)
-xTest <- read.table('./test/X_test.txt', header = FALSE) 
-yTest <- read.table('./test/y_test.txt', header = FALSE)
+##### Read data from testing files
+1. subjectTest <- read.table('./test/subject_test.txt', header = FALSE)
+2. xTest <- read.table('./test/X_test.txt', header = FALSE) 
+3. yTest <- read.table('./test/y_test.txt', header = FALSE)
 
