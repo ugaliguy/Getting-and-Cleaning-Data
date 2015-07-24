@@ -87,5 +87,18 @@ For example, the variable fBodyBodyGyroJerkMag-std() becomes freqBodyGyroJerkMag
 |timeBodyAccJerk-StdDev-X| Standard deviation of time of body acceleration jerk for X direction |
 |timeBodyAccJerk-StdDev-Y| Standard deviation of time of body acceleration jerk for Y direction |
 |timeBodyAccJerk-StdDev-Z| Standard deviation of time of body acceleration jerk for Z direction |
+|timeBodyGyro-Mean-X| Mean body gyroscope measurement for X direction |
+|timeBodyGyro-Mean-Y| Mean body gyroscope measurement for Y direction |
+|timeBodyGyro-Mean-Z| Mean body gyroscope measurement for Z direction |
+|timeBodyGyro-StdDev-X| Standard deviation of body gyroscope measurement for X direction |
+|timeBodyGyro-StdDev-Y| Standard deviation of body gyroscope measurement for Y direction |
+|timeBodyGyro-StdDev-Z| Standard deviation of body gyroscope measurement for Z direction |
+|timeBodyGyroJerk-Mean-X| Mean jerk signal of body for X direction |
+|timeBodyGyroJerk-Mean-Y| Mean jerk signal of body for Y direction |
+|timeBodyGyroJerk-Mean-Z| Mean jerk signal of body for Z direction |
+|timeBodyGyroJerk-StdDev-X| Standard deviation of jerk signal of body for X direction |
+|timeBodyGyroJerk-StdDev-Y| Standard deviation of jerk signal of body for Y direction |
+|timeBodyGyroJerk-StdDev-Z| Standard deviation of jerk signal of body for Z direction |
+|timeBodyAccMag-Mean|Mean magnitude of body Acceleration|
+|timeBodyAccMag-StdDev|Standard deviation of magnitude of body Acceleration|
 |||
-
