@@ -135,3 +135,5 @@ For example, the variable fBodyBodyGyroJerkMag-std() becomes freqBodyGyroJerkMag
 |freqBodyGyroMag-StdDev| Standard deviation of frequency of magnitude of body gyroscopic measurement |
 |freqBodyGyroJerkMag-Mean| Mean magnitude of body gyroscopic jerk measurement |
 |freqBodyGyroJerkMag-StdDev| Standard deviation frequency of magnitude of body gyroscopic jerk measurement |
+
+
